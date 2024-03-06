@@ -16,7 +16,9 @@ a{
     text-decoration: none;
 }
 img{
+    display: block;
     width: 100%;
+    border-radius: 5px;
 }
 /*GRID GERAL*/
 .estrutura{
@@ -27,7 +29,7 @@ img{
     "sidenav content anuncios"
     "footer footer footer";
 }
-
+/* HEADER */
 .header{
     grid-area: header;
     background-image: linear-gradient(to right, #8844ee, #B07DFB);
@@ -35,6 +37,9 @@ img{
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
+    position: sticky;
+    top: 0;
+    
 }
 .logo{
     max-width: 200px;
@@ -81,13 +86,29 @@ img{
 .sidenav li a:hover{
     background-color:  #B07DFB;
 }
-
+/* CONTENT */
 .content{
     grid-area: content;
 }
+/*==== ANÚNCIOS ====*/
+
 .anuncios{
     grid-area: anuncios;
+    background-color: #fafbfc;
+    display: grid;
+    align-content: start;
+    padding: 30px;
+    gap: 30px;
 }
+/*==== FOOTER ====*/
 .footer{
     grid-area: footer;
+    background-image: linear-gradient(to right, #8844ee, #B07DFB);
+    
+    
+}
+.footer p {
+    color: white;
+    text-align: center;
+    padding: 30px;
 }
