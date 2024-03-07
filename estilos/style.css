@@ -167,6 +167,32 @@ img{
     color: #B07DFB;
     max-width: 16em;
   }
+
+  .citaçao, .atributo{
+    align-self: self-start;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 0px rgba(44,44,44,0.15);
+    background-image: linear-gradient(135deg, #8844ee, #B07DFB);
+  }
+  .citaçao p {
+    font-size: 1.5em;
+    font-style: italic;
+    text-align: center;
+    max-width: 500px;
+    color: white;
+    margin: auto;
+  }
+  .atributo li{ 
+    color: white;
+    font-family:  Courier, monospace;
+    font-size: 1.125em;
+    padding: 15px;
+    
+  }
+  .atributo li + li{
+   border-top: 2px solid #B07DFB;
+  }
 /*==== ANÚNCIOS ====*/
 
 .anuncios{
