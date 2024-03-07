@@ -89,7 +89,84 @@ img{
 /* CONTENT */
 .content{
     grid-area: content;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
 }
+.col-wide{
+    grid-column: 1 / -1;
+}
+.imagem-1{
+    grid-row: span 2;
+    align-self: self-end;
+}
+.imagem-2{
+    align-self: self-end;
+}
+/*=== ESTILOS CONTENT ===*/
+  p{
+    font-size: 1.2em;
+    line-height: 1.6;
+    letter-spacing: -0.005em; /*ESPAÇAMENTO ENTRE AS LETRAS*/
+    color: rgba(0,0,0,.7);
+  }  
+  .informaçoes p + p{ /*ESTOU FALANDO COM O P APOS O P TERA MARGIN 30PX*/
+    margin-top: 30px;
+  }
+  
+  /**TITULO**/
+  .titulo{
+    color: #B07DFB;
+  }
+  .titulo h1{
+    font-size: 3.75em;
+    line-height: 1;
+    font-weight: 700;
+  }
+  .titulo p {
+    font-size: 0.875em;
+    font-style: italic;
+  }
+
+  /**CARACTERISTICAS DO ANIMAL**/
+  .caracteristicas{
+    display: flex;
+    align-items: flex-start;
+
+  }
+  .caracteristicas > div {
+    width: 80px;
+    text-align: center;
+    background-image: linear-gradient(to right, #8844ee, #B07DFB);
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+    position: relative;
+  }
+  .caracteristicas > div:first-child{ /*falando com a 1º div*/
+    margin-right: 30px;
+  }
+  .numero{
+    color: #B07DFB;
+    font-size: 3em;
+    line-height: 1;
+    margin: 10px auto;
+  }
+  .rotulo{
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+    color: #B07DFB;
+    padding: 5px 0;
+    position: relative;
+    top: 2px;
+  }
+  .destaque{
+    font-size: 14px;
+    color: #B07DFB;
+    max-width: 16em;
+  }
 /*==== ANÚNCIOS ====*/
 
 .anuncios{
